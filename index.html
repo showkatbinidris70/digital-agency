@@ -13,9 +13,15 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- fontawsome -->
     <link rel="stylesheet" href="./assets/css/font-awesome-all.min.css" />
 
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>Personal Portfolio Template</title>
 </head>
@@ -200,6 +206,53 @@
             </div>
         </div>
     </section>
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <!-- Slider main container -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/images/slider.png" /></div>
+            <div class="swiper-slide"><img src="./assets/images/slider.png" /></div>
+            <div class="swiper-slide"><img src="./assets/images/slider.png" /></div>
+            <div class="swiper-slide"><img src="./assets/images/slider.png" /></div>
+            <div class="swiper-slide"><img src="./assets/images/slider.png" /></div>
+            <div class="swiper-slide"><img src="./assets/images/slider.png" /></div>
+            <div class="swiper-slide"><img src="./assets/images/slider.png" /></div>
+            <div class="swiper-slide"><img src="./assets/images/slider.png" /></div>
+            <div class="swiper-slide"><img src="./assets/images/slider.png" /></div>
+            <div class="swiper-slide"><img src="./assets/images/slider.png" /></div>
+        </div>
+        <!-- <div class="swiper-button-next"></div> -->
+        <!-- <div class="swiper-button-prev"></div> -->
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+
     <style>
         .image-wrapper {
             position: relative;
@@ -603,6 +656,9 @@
 
     <!-- bootstrap 5.0.2 bootstrap.bundle.min.js-->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- swiper slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- custom js -->
     <script src="./assets/js/main.js"></script>
