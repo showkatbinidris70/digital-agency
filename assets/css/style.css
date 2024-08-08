@@ -65,6 +65,7 @@ body {
 }
 
 /* header end */
+
 /* hero secton start */
 .hero-section {
   background-color: rgba(36, 102, 93, 0.8);
@@ -82,7 +83,7 @@ body {
   font-size: 36px;
   font-weight: 400;
   text-transform: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .hero-section .hero-title {
@@ -90,12 +91,12 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   line-height: 180px;
-  color: #FFFFFF;
+  color: #ffffff;
   overflow: hidden;
 }
 
 .hero-section .hero-escription {
-  color: #FFFFFF;
+  color: #ffffff;
   /* padding: 65px 320px 25px 0px; */
   font-size: 22px;
   font-weight: 400;
@@ -104,10 +105,47 @@ body {
 
 .hero-section .read-more-btn {
   text-transform: uppercase;
-initial-letter: 2px;
+  initial-letter: 2px;
 }
 
 /* hero-section end */
+/* breadcrumb start */
+.breadcrumb {
+  background: url("/assets/images/breadcrumb-01.jpg") rgba(43, 37, 5, 0.5);
+  padding: 10rem 0rem 15rem 0rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 10rem;
+  background-blend-mode: multiply;
+  margin-bottom: 0rem !important;
+}
+
+.breadcrumb .title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.breadcrumb .btn {
+  border-radius: 50px;
+  border: 2px dotted #01f1f4;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.breadcrumb .btn a {
+  color: #fff;
+}
+
+.breadcrumb .btn span {
+  color: #01f1f4;
+  cursor: none;
+}
+
+/* breadcrumb end */
+
 .feature-2-image {
   width: 100%;
   max-width: 676px;
