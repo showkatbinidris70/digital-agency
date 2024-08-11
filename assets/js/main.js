@@ -34,3 +34,8 @@ var swiper = new Swiper(".mySwiper", {
   // centeredSlides: true,
   // loopAdditionalSlides: 2
 });
+
+// footer copy right year
+const date = new Date();
+const year = date.getFullYear();
+document.getElementById("year").innerHTML = year;
