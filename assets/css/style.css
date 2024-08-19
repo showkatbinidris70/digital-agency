@@ -168,7 +168,7 @@ body {
 /* hero-section end */
 /* breadcrumb start */
 .breadcrumb {
-  background: url("/assets/images/breadcrumb-01.jpg") rgba(43, 37, 5, 0.5);
+  background: url("/assets/images/breadcrumb-01.jpg") var(--secondary-color);
   padding: 10rem 0rem 15rem 0rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -197,7 +197,7 @@ body {
 }
 
 .breadcrumb .btn span {
-  color: #01f1f4;
+  color: var(--white);
   cursor: none;
 }
 
@@ -209,15 +209,52 @@ body {
   height: 553px;
   object-fit: cover;
 }
-.footer {
-  background-color: var(--black-secondary);
+
+/* contact page start */
+.contact-section .contact-img {
+  background-color: var(--secondary-color);
+  background-position: center;
+  min-height: 100%;
+  background: url("/assets/images/contact-img.jpg") var(--secondary-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+.contact-section .contact-info {
+  /* height: 100%; */
+}
+
+.contact-section .contact-info .mail-address {
+  margin-top: 10rem;
+}
+.contact-section .contact-info .mail-address ul li {
+  color: var(--primary-color);
+}
+.contact-section .contact-send-btn {
+  background-color: var(--primary-color);
   color: var(--white);
 }
+/* contact page end */
+
+/* footer start */
+.footer {
+  /* background-color: var(--secondary-color); */
+  color: var(--white);
+  background: url("/assets/images/footer-img.jpg") var(--secondary-color);
+  padding: 10rem 0rem 15rem 0rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  /* max-height: 5rem; */
+  background-blend-mode: multiply;
+}
+
 .footer .footer-logo p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  text-transform: capitalize;
-  line-height: 130%;
+  text-transform: none;
+  line-height: 140%;
   color: var(--white);
   font-family: "Lato";
   overflow: hidden;
@@ -242,8 +279,9 @@ body {
   font-family: "Lato";
 }
 .footer .footer-copyright {
-  background-color: #222222;
+  background-color: var(--primary-color);
 }
+/* footer end */
 /* media query start */
 @media screen and (min-width: 1200px) and (max-width: 1399.98px) {
 }

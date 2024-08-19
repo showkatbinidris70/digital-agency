@@ -14,6 +14,15 @@
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="./assets/css/font-awesome-all.min.css" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <title>Personal Portfolio Template</title>
 </head>
 
@@ -26,17 +35,17 @@
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="container-fluid px-0">
                             <a class="navbar-brand" href="/">
-                                <h3 class="fs-3">Nano</h3>
+                                <h3 class="fs-3">Logo</h3>
                             </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                                 aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <span><i class="fa-solid fa-bars"></i></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav ms-md-auto gap-2">
                                     <li class="nav-item rounded">
-                                        <a class="nav-link active" aria-current="page" href="about.html"><i
+                                        <a class="nav-link" aria-current="page" href="about.html"><i
                                                 class="bi bi-house-fill me-2"></i>About</a>
                                     </li>
                                     <li class="nav-item rounded">
@@ -60,419 +69,129 @@
         </div>
     </header>
 
-    <section class="hero-section">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="hero-slider-image">
-                        <img src="./assets/images/slider.png" class="img-fluid hero-image w-100 h-100"
-                            alt="Here is an image">
-                        <div class="hero-overlay"></div>
-                    </div>
-                    <div class="carousel-caption">
-                        <h2 class="hero-slider-title">Grow Your Digital Marketing Revenue</h2>
-                        <p class="short-message">Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Explicabo
-                            suscipit asperiores fugiat
-                            distinctio ex perspiciatis repellendus.</p>
-                        <div class="mt-5"><a href="projects.html" class="cta-btn">Our Projects <i
-                                    class="fa-solid fa-arrow-right ps-2"></i></a></div>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <div class="hero-slider-image">
-                        <img src="./assets/images/slider.png" class="img-fluid hero-image w-100 h-100"
-                            alt="Here is an image">
-                        <div class="hero-overlay"></div>
-                    </div>
-                    <div class="carousel-caption">
-                        <h2 class="hero-slider-title">We are the top agency in town</h2>
-                        <p class="short-message">Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Explicabo
-                            suscipit asperiores fugiat
-                            distinctio ex perspiciatis repellendus.</p>
-                        <div class="mt-5"><a href="projects.html" class="cta-btn">Our Projects <i
-                                    class="fa-solid fa-arrow-right ps-2"></i></a></div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="hero-slider-image">
-                        <img src="./assets/images/slider.png" class="img-fluid hero-image w-100 h-100"
-                            alt="Here is an image">
-                        <div class="hero-overlay"></div>
-                    </div>
-                    <div class="carousel-caption">
-                        <h2 class="hero-slider-title">Grow Your Digital Marketing Revenue</h2>
-                        <p class="short-message">Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Explicabo
-                            suscipit asperiores fugiat
-                            distinctio ex perspiciatis repellendus.</p>
-                        <div class="mt-5"><a href="projects.html" class="cta-btn">Our Projects <i
-                                    class="fa-solid fa-arrow-right ps-2"></i></a></div>
-                    </div>
+    <section class="breadcrumb">
+        <div class="container">
+            <div class="row">
+                <h2 class="title">Our Projects </h2>
+                <div class="pt-3">
+                    <h4 class="btn py-3 px-5"><a class="" href="/">Home</a> <span><i
+                                class="fa-solid fa-angles-right"></i>
+                            Our Projects</span></h4>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <i class="fa-solid fa-circle-arrow-left fs-1"></i>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <i class="fa-solid fa-circle-arrow-right fs-1"></i>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </section>
     <style>
-        .project-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vH;
-            background-color: #F5F5F5;
-            font-family: Roboto;
-        }
-
-        .project-section h1 {
-            font-size: 40pt;
-            font-weight: 500;
-            color: #363638;
-        }
-
-        .project-section .project-container {
-            margin-top: 50px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            width: 80%;
-        }
-
-        .project-section .item {
-            position: relative;
-            float: left;
-            overflow: hidden;
-            margin: 10px 1%;
-            min-width: 320px;
-            max-width: 410px;
-            width: 100%;
-            text-align: center;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-            box-sizing: border-box;
-        }
-
-        .project-section .item:hover {
-            cursor: pointer;
-        }
-
-        .project-section .item * {
-            transition: all 0.35s ease-in-out;
-        }
-
-        .project-section img {
-            max-width: 100%;
-            vertical-align: top;
-            height: 310px;
-        }
-
-        .project-section .item:hover img {
-            opacity: 0.3;
-            /* background-color: #01A2AC; */
-        }
-
-        .project-section .text {
-            width: 80%;
-            height: 90%;
-            position: absolute;
-            top: -100px;
-            left: 10%;
-            color: #01A2AC;
-        }
-
-        .project-section .text h3 {
-            color: black;
-        }
-
-        .project-section .item:hover .text {
-            top: 20%;
-        }
-
-        .project-section .item:hover .button {
-            bottom: 20%;
-        }
-
-        .project-section .item .button {
-            position: absolute;
-            bottom: -100px;
-            left: 25%;
-            width: 50%;
-            border: 3px solid #01A2AC;
-            padding: 15px;
-            box-sizing: border-box;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .project-section .button:hover {
-            background-color: #01A2AC;
-            color: #F5F5F5;
-        }
-
-        /* Modal */
-
-        .project-section .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-
-        .project-section .modal-content {
-            background-color: #F5F5F5;
-            margin: 5% auto;
-            box-sizing: border-box;
-            width: 700px;
-            max-height: 714px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-        }
-
-        .project-section .scale {
-            animation: scale 0.5s;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes scale {
-            from {
-                transform: scale(0);
-            }
-
-            to {
-                transform: scale(1);
-            }
-        }
-
-        .project-section #img {
-            width: 100%;
-            height: 450px;
-        }
-
-        .project-section #details {
-            padding: 25px;
-            text-align: left;
-            position: relative;
-            height: 264px;
-            box-sizing: border-box;
-            border-top: 1px solid #363638;
-        }
-
-        .project-section #details * {
-            transition: all .3s;
-        }
-
-        .project-section #title {
-            padding-bottom: 15px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        }
-
-        .project-section #details .button {
-            position: absolute;
-            width: 30%;
-            background-color: #01A2AC;
-            color: #F5F5F5;
-            text-align: center;
-            left: 25px;
-            bottom: 35px;
-            padding: 15px;
-        }
-
-        .project-section #details i {
-            position: absolute;
-            bottom: 30px;
-            right: 25px;
-            font-size: 3rem;
-            color: #01A2AC;
-        }
-
-        .project-section #details .button:hover,
-        i:hover {
-            cursor: pointer;
-            opacity: 0.8;
-        }
-
-        /* Close Button */
-        .project-section .close {
-            color: #aaa;
-            font-size: 28px;
-            font-weight: bold;
-            position: absolute;
-            right: 10px;
-        }
-
-        .project-section .close:hover,
-        .project-section .close:focus {
-            color: #363638;
-            text-decoration: none;
-            cursor: pointer;
+        .our-projects .nav-link.active {
+            background-color: #f6f6f6;
+            border-radius: 5px;
         }
     </style>
-    <section class="project-section">
-        <div class="container project-container">
+    <section class="our-projects">
+        <div class="container my-5">
             <div class="row">
-                <div class="col-sm-6 col-lg-6 col-xl-4 py-3">
-                    <div class="item" id="1">
-                        <img src="https://images.unsplash.com/photo-1508124780861-b1687f9a13e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f841d43a63c085e930aa5b6b33e89a9f&auto=format&fit=crop&w=1385&q=80"
-                            alt="" class="rounded">
-                        <div class="text">
-                            <h3>PROJECT 1</h4>
-                                <p>Short Description</p>
-                        </div>
-                        <div class="button">Learn More</div>
-                    </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
+                    <ul class="nav text-white">
+                        <li class="nav-item w-100">
+                            <a class="nav-link ps-4 d-flex gap-3 align-items-center fs-5 fw-bold link-secondary active"
+                                id="home-tab" data-bs-toggle="tab" data-bs-target="#home" href="#">
+                                <i class="fa-solid fa-mars-double"></i> Live Visual
+                                Builder</a>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a class="nav-link ps-4 d-flex gap-3 align-items-center fs-5 fw-bold link-secondary"
+                                id="about-tab" data-bs-toggle="tab" data-bs-target="#about" href="#">
+                                <i class="fa-brands fa-mendeley"></i>
+                                Layout Builder</a>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a class="nav-link ps-4 d-flex gap-3 align-items-center fs-5 fw-bold link-secondary"
+                                id="album-tab" data-bs-toggle="tab" data-bs-target="#album" href="#">
+                                <i class="fa-solid fa-square-minus"></i>
+                                Header Builder</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm-6 col-lg-6 col-xl-4 py-3">
-                    <div class="item" id="2">
-                        <img src="https://images.unsplash.com/photo-1496492352121-593138d42a61?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3542849cc0459345e3aa82a90ae51a01&auto=format&fit=crop&w=1350&q=80"
-                            alt="" class="rounded">
-                        <div class="text">
-                            <h3>PROJECT 2</h4>
-                                <p>Short Description</p>
+                <div class="col-sm-6 col-md-7 col-lg-8 col-xl-9">
+                    <div class="tab-content" id="tabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <a href="#"><img decoding="async" class="img-fluid"
+                                    src="https://avada.com/wp-content/uploads/2021/07/live-visual.jpg"
+                                    alt="Live Visual Builder"></a>
                         </div>
-                        <div class="button">Learn More</div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-6 col-xl-4 py-3">
-
-                    <div class="item" id="3">
-                        <img src="https://images.unsplash.com/photo-1515215676803-119c88d493cf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=baf00747bfb9fe41ad9af8cf00dbebbf&auto=format&fit=crop&w=1350&q=80"
-                            alt="" class="rounded">
-                        <div class="text">
-                            <h3>PROJECT 3</h4>
-                                <p>Short Description</p>
+                        <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+                            <a href="#"><img decoding="async" class="img-fluid"
+                                    src="https://avada.com/wp-content/uploads/2021/07/layout-builder-4.jpg"
+                                    alt="Live Visual Builder"></a>
                         </div>
-                        <div class="button">Learn More</div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-6 col-xl-4 py-3">
-                    <div class="item" id="4">
-                        <img src="https://images.unsplash.com/photo-1496939217462-7d42e9a74f0e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5e3be993a88feed38e4f5374ff3ba115&auto=format&fit=crop&w=1350&q=80g"
-                            alt="" class="rounded">
-                        <div class="text">
-                            <h3>PROJECT 4</h4>
-                                <p>Short Description</p>
+                        <div class="tab-pane fade" id="album" role="tabpanel" aria-labelledby="album-tab">
+                            <a href="#"><img decoding="async" class="img-fluid"
+                                    src="https://avada.com/wp-content/uploads/2021/07/header-builder-5.jpg"
+                                    alt="Live Visual Builder"></a>
                         </div>
-                        <div class="button">Learn More</div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-lg-6 col-xl-4 py-3">
-
-                    <div class="item" id="5">
-                        <img src="https://images.unsplash.com/photo-1504875427817-937a8a12e167?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd7f399ba43093ead08e7dbf5e083f09&auto=format&fit=crop&w=1434&q=80"
-                            alt="" class="rounded">
-                        <div class="text">
-                            <h3>PROJECT 5</h4>
-                                <p>Short Description</p>
-                        </div>
-                        <div class="button">Learn More</div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-6 col-xl-4 py-3">
-                    <div class="item" id="6">
-                        <img src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f758b0379f730e73c03b6153aaad7cf1&auto=format&fit=crop&w=1350&q=80"
-                            alt="" class="rounded">
-                        <div class="text">
-                            <h3>PROJECT 6</h4>
-                                <p>Short Description</p>
-                        </div>
-                        <div class="button">Learn More</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal -->
-        <div id="preview" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <img id="img" src="">
-                <div id="details">
-                    <h3 id="title"></h3>
-                    <p id="info">Some text</p>
-                    <div class="button" id="live">View</div>
-                    <i class="fab fa-github-square" id="github"></i>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-day-time">
-                    <div class="row">
-                        <div class="col-md-6 col-xl-8">
-                            <ul>
-                                <li>Opening Hours: Mon - Friday: 8AM - 5PM</li>
-                                <li>Sunday: 8:00 AM - 12:00 PM</li>
+    <footer class="footer py-0">
+        <div class="main-footer widgets-dark typo-light">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-logo">
+                            <h5 class="widget-title">Logo<span></span></h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni sunt dolorem aperiam sed,
+                                provident nostrum odit ut tempora, perferendis excepturi reprehenderit a quasi amet
+                                minus hic ab quod, ipsum quo? </p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="quick-links">
+                            <h5 class="widget-title">Quick Links<span></span></h5>
+                            <ul class="thumbnail-widget">
+                                <li>
+                                    <div class="thumb-content"><a href="#.">Home</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="#.">About</a></div>
+                                </li>
+                                <li>
+                                    <div class="thumb-content"><a href="#.">Tearms & Conditions</a></div>
+                                </li>
                             </ul>
                         </div>
-                        <div class="col-md-6 col-xl-4">
-                            <div class="phone-no pt-3 pt-xl-0">
-                                <a href="tel:+12 34 56 78 90"><i class="fa fa-mobile" aria-hidden="true"></i>Call +12 34
-                                    56 78 90</a>
-                            </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <h5 class="widget-title">Follow up<span></span></h5>
+                        <div class="d-flex gap-3 my-3">
+                            <a href="#"> <i class="fa-brands fa-facebook fs-2 text-white"></i> </a>
+                            <a href="#"> <i class="fa-brands fa-twitter fs-2 text-white"> </i> </a>
+                            <a href="#"> <i class="fa-brands fa-instagram fs-2 text-white"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-contact">
+                            <h5 class="widget-title">Contact Us<span></span></h5>
+                            <div class="d-flex gap-2 align-items-center"><i class="fa-solid fa-phone-volume"></i>
+                                +63-444-444-55</div>
+                            <div class="d-flex gap-2 align-items-center"><i class="fa-regular fa-envelope"></i>
+                                nano@gmail.com</div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-
-                        <h4>About us</h4>
-                        <p>Lorem Ipsum ist einfach Dummy-Text der Druck- und Satzindustrie. Lorem Ipsum war der Standard
-                            der Branche Lorem Ipsum ist einfach Dummy-Text der Druck- und Satzindustrie. Lorem Ipsum war
-                            der Standard der Branche </p>
-
-                    </div>
-
-                    <div class="col-md-4">
-                        <h4>Information</h4>
-                        <ul class="address1">
-                            <li><i class="fa fa-map-marker"></i>Lorem Ipsum 132 xyz Lorem Ipsum</li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:#">info@test.com</a></li>
-                            <li><i class="fa fa-mobile" aria-hidden="true"></i> <a href="tel:12 34 56 78 90">12 34 56 78
-                                    90</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-4">
-                        <h4>Follow us</h4>
-                        <ul class="social-icon">
-                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        </ul>
-                    </div>
-
-                </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-5">
-                        <p class="copyright text-uppercase">Copyright © 2018
-                        </p>
-                    </div>
-                    <div class="col-sm-7">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Our services</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
+
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p class="pt-3">Copyright Design Nano © <span id="year"></span>. All rights reserved.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -481,6 +200,9 @@
 
     <!-- bootstrap 5.0.2 bootstrap.bundle.min.js-->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- swiper slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- custom js -->
     <script src="./assets/js/main.js"></script>

@@ -20,6 +20,10 @@
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- swiper slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -160,6 +164,310 @@
         </div>
     </section>
 
+    <style>
+        /* counter-up-section start */
+
+        .counter-up-section .card {
+            background-color: var(--bg_white);
+            box-shadow: 1px 11px 48px -21px rgba(0, 0, 0, 1);
+            -webkit-box-shadow: 1px 11px 48px -21px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 1px 11px 48px -21px rgba(0, 0, 0, 1);
+        }
+
+        .counter-up-section .counter {
+            font-family: "Nunito Sans", sans-serif;
+            background: #fff;
+            text-align: center;
+            width: 200px;
+            min-height: 215px;
+            padding: 10px 15px;
+            margin: 0 auto;
+            border-radius: 30px;
+            box-shadow: 0 8px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .counter-up-section .counter:before {
+            content: "";
+            background-color: #9dd662;
+            height: 105px;
+            width: 100%;
+            border-radius: 30px 30px 0 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .counter-up-section .counter .counter-icon {
+            color: #fff;
+            background: #7ca936;
+            font-size: 50px;
+            line-height: 90px;
+            width: 120px;
+            height: 100px;
+            margin: 0 auto 10px;
+            border-radius: 10px 10px 0 0;
+            transform: translateY(-20px);
+            position: relative;
+            clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%);
+        }
+
+        .counter-up-section .counter .counter-icon:before {
+            content: "";
+            background: #8ac248;
+            width: 120px;
+            height: 90px;
+            border-radius: 10px 10px 0 0;
+            transform: translateX(-50%);
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: -1;
+            clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%);
+        }
+
+        .counter-up-section .counter:hover .counter-icon i {
+            transform: rotate(360deg);
+            transition: all 0.3s ease;
+        }
+
+        .counter-up-section .counter h3 {
+            color: #333;
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin: 0 0 5px 0;
+        }
+
+        .counter-up-section .counter .counter-value {
+            color: #7ca936;
+            font-size: 30px;
+            font-weight: 600;
+            display: block;
+        }
+
+        .counter-up-section .counter.blue:before {
+            background-color: #5a9bef;
+        }
+
+        .counter-up-section .counter.blue .counter-icon {
+            background-color: #2a70b5;
+        }
+
+        .counter-up-section .counter.blue .counter-icon:before {
+            background-color: #367dcb;
+        }
+
+        .counter-up-section .counter.blue .counter-value {
+            color: #367dcb;
+        }
+
+        .counter-up-section .counter.red:before {
+            background-color: #fd6d4b;
+        }
+
+        .counter-up-section .counter.red .counter-icon {
+            background-color: #d14026;
+        }
+
+        .counter-up-section .counter.red .counter-icon:before {
+            background-color: #ea5736;
+        }
+
+        .counter-up-section .counter.red .counter-value {
+            color: #ea5736;
+        }
+
+        .counter-up-section .counter.gray:before {
+            background-color: #777;
+        }
+
+        .counter-up-section .counter.gray .counter-icon {
+            background-color: #444;
+        }
+
+        .counter-up-section .counter.gray .counter-icon:before {
+            background-color: #666;
+        }
+
+        .counter-up-section .counter.gray .counter-value {
+            color: #666;
+        }
+
+        @media screen and (max-width: 990px) {
+            .counter-up-section .counter {
+                margin-bottom: 40px;
+            }
+        }
+
+        /* counter-up-section end */
+    </style>
+
+    <section class="counter-up-section" style="padding: 5rem 0rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 py-3 py-xl-0">
+                    <div class="counter">
+                        <div class="counter-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>Web Development</h3>
+                            <h2 data-max="50" class="counter-value">+</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 py-3 py-xl-0">
+                    <div class="counter blue">
+                        <div class="counter-icon">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>Web Design</h3>
+                            <h2 data-max="100" class="counter-value">+</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 py-3 py-xl-0">
+                    <div class="counter red">
+                        <div class="counter-icon">
+                            <i class="fa fa-briefcase"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>Web Design</h3>
+                            <h2 data-max="150" class="counter-value">+</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 py-3 py-xl-0">
+                    <div class="counter gray">
+                        <div class="counter-icon">
+                            <i class="fa fa-mobile"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>Web Design</h3>
+                            <h2 data-max="200" class="counter-value">+</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        // counter up start
+        function inVisible(element) {
+            var WindowTop = $(window).scrollTop();
+            var WindowBottom = WindowTop + $(window).height();
+            var ElementTop = element.offset().top;
+            var ElementBottom = ElementTop + element.height();
+            if (ElementBottom <= WindowBottom && ElementTop >= WindowTop)
+                animate(element);
+        }
+
+        function animate(element) {
+            if (!element.hasClass("ms-animated")) {
+                var maxval = element.data("max");
+                var html = element.html();
+                element.addClass("ms-animated");
+                $({
+                    countNum: element.html(),
+                }).animate(
+                    {
+                        countNum: maxval,
+                    },
+                    {
+                        duration: 5000,
+                        easing: "linear",
+                        step: function () {
+                            element.html(Math.floor(this.countNum) + html);
+                        },
+                        complete: function () {
+                            element.html(this.countNum + html);
+                        },
+                    }
+                );
+            }
+        }
+
+        //When the document is ready
+        $(function () {
+            $(window).scroll(function () {
+                $("h2[data-max]").each(function () {
+                    inVisible($(this));
+                });
+            });
+        });
+        // counter up end
+    </script>
+
+    <style>
+        .our-services {
+            background-color: #f7f9fc;
+        }
+    </style>
+    <div class="our-services py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-xl-4">
+                    <div class="sticky-top" style="padding-top: 5rem;">
+                        <h2 style="font-size: 65px;">Our <br /> Servces</h2>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-8 col-xl-8">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body">
+                                    <h5 class="card-title">Management & Leasing</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                        do
+                                        eiusmod tempor incididunt ut labore.</p>
+                                    <a href="#" class="card-link">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body">
+                                    <h5 class="card-title">Management & Leasing</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                        do
+                                        eiusmod tempor incididunt ut labore.</p>
+                                    <a href="#" class="card-link">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body">
+                                    <h5 class="card-title">Management & Leasing</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                        do
+                                        eiusmod tempor incididunt ut labore.</p>
+                                    <a href="#" class="card-link">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body">
+                                    <h5 class="card-title">Management & Leasing</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                        do
+                                        eiusmod tempor incididunt ut labore.</p>
+                                    <a href="#" class="card-link">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <section class="features-section mt-5">
         <div class="container">
@@ -305,7 +613,316 @@
     <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' />
 
 
-    <footer class="footer py-3">
+
+    <!-- testimonial start -->
+    <style>
+        .large-container {
+            position: static;
+            max-width: 1580px;
+            padding: 0px 30px;
+            margin: 0 auto;
+        }
+
+        .testimonial-section {
+            position: relative;
+            padding-top: 80px;
+            padding-bottom: 210px;
+            overflow: hidden;
+        }
+
+        .testimonial-section:before {
+            position: absolute;
+            left: -200px;
+            top: 22%;
+            background-image: url(http://t.commonsupport.com/adro/images/icons/ring-circle.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 701px;
+            height: 756px;
+            content: "";
+            -webkit-animation: fa-spin 25s infinite alternate;
+            -moz-animation: fa-spin 25s infinite alternate;
+            -ms-animation: fa-spin 25s infinite alternate;
+            -o-animation: fa-spin 25s infinite alternate;
+            animation: fa-spin 25s infinite alternate;
+        }
+
+        .testimonial-section .sec-title {
+            position: relative;
+            margin-bottom: 115px;
+        }
+
+        .testimonial-section .sec-title .title {
+            margin-bottom: 20px;
+        }
+
+        .testimonial-section .testimonial-carousel {
+            position: relative;
+            max-width: 1100px;
+            margin: 0 -50px;
+        }
+
+        .testimonial-block {
+            position: relative;
+            padding: 50px;
+        }
+
+        .testimonial-block .inner-box {
+            padding: 80px 105px;
+            background-color: #fff;
+            box-shadow: 0 0 50px rgba(226, 222, 232, 0.75);
+        }
+
+        .testimonial-block .text {
+            position: relative;
+            display: block;
+            font-size: 18px;
+            line-height: 32px;
+            color: #282331;
+            font-weight: 400;
+            margin-bottom: 50px;
+            font-family: "Muli", sans-serif;
+        }
+
+        .testimonial-block .info-box {
+            position: relative;
+            padding-left: 115px;
+            padding-top: 10px;
+        }
+
+        .testimonial-block .info-box .thumb {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 82px;
+            width: 82px;
+        }
+
+        .testimonial-block .info-box .thumb img {
+            border: 6px solid #e5e6fa;
+            border-radius: 50%;
+            overflow: hidden;
+            display: block;
+            width: 100%;
+            box-shadow: 0 45px 45px rgba(147, 147, 147, 0.35);
+        }
+
+        .testimonial-block .info-box .name {
+            position: relative;
+            display: block;
+            font-size: 21px;
+            line-height: 1.2em;
+            color: #382c4d;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: "Niramit", sans-serif;
+        }
+
+        .testimonial-block .info-box .designation {
+            position: relative;
+            display: block;
+            font-size: 16px;
+            line-height: 24px;
+            color: #8053f7;
+            font-weight: 400;
+            font-family: "Muli", sans-serif;
+        }
+
+        .testimonial-carousel .owl-nav {
+            position: absolute;
+            right: 75px;
+            bottom: 70px;
+        }
+
+        .testimonial-carousel .owl-next,
+        .testimonial-carousel .owl-prev {
+            position: relative;
+            display: inline-block;
+            height: 75px;
+            width: 75px;
+            line-height: 75px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #fff;
+            -webkit-transition: all 300ms ease;
+            -moz-transition: all 300ms ease;
+            -ms-transition: all 300ms ease;
+            -o-transition: all 300ms ease;
+            transition: all 300ms ease;
+        }
+
+        .testimonial-carousel .owl-next:hover,
+        .testimonial-carousel .owl-prev:hover {
+            background-color: #00df97;
+            box-shadow: 0 24px 24px rgba(187, 187, 187, 0.75);
+        }
+
+        .arrow-right,
+        .arrow-left {
+            position: relative;
+            display: inline-block;
+            height: 9px;
+            width: 43px;
+            background-image: url(http://t.commonsupport.com/adro/images/icons/arrow-left-2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .arrow-right {
+            background-image: url(http://t.commonsupport.com/adro/images/icons/arrow-right-2.png);
+        }
+
+        .testimonial-section .thumb-layer {
+            position: absolute;
+            right: 30px;
+            top: 120px;
+        }
+
+        .testimonial-section .thumb-layer .image {
+            position: relative;
+            margin-right: 0;
+        }
+
+        .testimonial-section .thumb-layer .image img {
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .testimonial-section .sec-title {
+                margin-bottom: 50px;
+            }
+
+            .testimonial-block {
+                padding: 0;
+            }
+
+            .testimonial-block .inner-box {
+                box-shadow: none;
+                border: 2px solid #f1f1f1;
+            }
+
+            .testimonial-carousel .owl-nav {
+                position: relative;
+                left: 0;
+                bottom: 0;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .testimonial-carousel .owl-next,
+            .testimonial-carousel .owl-prev {
+                border: 2px solid #f1f1f1;
+            }
+        }
+
+        @media only screen and (max-width: 1366px) {
+            .large-container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    </style>
+    <style>
+        .swiper {
+            /* width: 600px; */
+            height: 500px;
+        }
+    </style>
+    <section class="testimonial-section" style="height: 100vh;">
+        <div class="large-container">
+            <div class="sec-title">
+                <span class="title">Testimonial</span>
+                <h2>What Our core client say ?</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-block">
+                                        <div class="inner-box">
+                                            <div class="text">Why is this important? Because clients want to know the
+                                                businesses they depend on for advice, are well managed in their own
+                                                right.
+                                                Not only that but this event gives you the chance to give your
+                                                back-office
+                                                team</div>
+                                            <div class="info-box">
+                                                <div class="thumb"><img
+                                                        src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg"
+                                                        alt=""></div>
+                                                <h4 class="name">Mahfuz Riad</h4>
+                                                <span class="designation">Ui Designer & CEO</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-block">
+                                        <div class="inner-box">
+                                            <div class="text">Why is this important? Because clients want to know the
+                                                businesses they depend on for advice, are well managed in their own
+                                                right.
+                                                Not only that but this event gives you the chance to give your
+                                                back-office
+                                                team</div>
+                                            <div class="info-box">
+                                                <div class="thumb"><img
+                                                        src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg"
+                                                        alt=""></div>
+                                                <h4 class="name">Mahfuz Riad</h4>
+                                                <span class="designation">Ui Designer & CEO</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-block">
+                                        <div class="inner-box">
+                                            <div class="text">Why is this important? Because clients want to know the
+                                                businesses they depend on for advice, are well managed in their own
+                                                right.
+                                                Not only that but this event gives you the chance to give your
+                                                back-office
+                                                team</div>
+                                            <div class="info-box">
+                                                <div class="thumb"><img
+                                                        src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg"
+                                                        alt=""></div>
+                                                <h4 class="name">Mahfuz Riad</h4>
+                                                <span class="designation">Ui Designer & CEO</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="thumb-layer paroller">
+                <figure class="image"><img src="http://t.commonsupport.com/adro/images/resource/user-thumbs.png" alt="">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- testimonial end -->
+
+    <footer class="footer py-0">
         <div class="main-footer widgets-dark typo-light">
             <div class="container py-5">
                 <div class="row">
@@ -337,10 +954,10 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <h5 class="widget-title">Follow up<span></span></h5>
-                        <div class="d-flex gap-3 mb-3">
-                            <a href="#"> <i class="fa fa-facebook"> </i> </a>
-                            <a href="#"> <i class="fa fa-twitter"> </i> </a>
-                            <a href="#"> <i class="fa fa-youtube"> </i> </a>
+                        <div class="d-flex gap-3 my-3">
+                            <a href="#"> <i class="fa-brands fa-facebook fs-2 text-white"></i> </a>
+                            <a href="#"> <i class="fa-brands fa-twitter fs-2 text-white"> </i> </a>
+                            <a href="#"> <i class="fa-brands fa-instagram fs-2 text-white"></i></a>
                         </div>
                     </div>
 
@@ -365,6 +982,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </footer>
 
     <!-- bootstrap 5.0.2 bootstrap.bundle.min.js-->
